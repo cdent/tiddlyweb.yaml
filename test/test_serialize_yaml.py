@@ -11,7 +11,7 @@ from tiddlyweb.model.bag import Bag
 from tiddlyweb.serializer import Serializer
 
 def setup_module(module):
-    module.serializer = Serializer('yaml')
+    module.serializer = Serializer('tiddlywebplugins.yaml')
 
 def assert_yaml(string):
     assert string.startswith('--')
